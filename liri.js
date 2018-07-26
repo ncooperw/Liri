@@ -151,3 +151,10 @@ function omdbData(movie){
     }
   });
 }
+
+function doThing(){
+  fs.readFile("random.txt", "utf8",function(error, data){
+    var txt = data.split (" , ");
+    spotifySong(txt[1]);
+  });
+}
